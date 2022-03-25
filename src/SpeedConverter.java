@@ -1,3 +1,6 @@
 public class SpeedConverter {
-    // write solution here
+    
+    public long toMilesPerHour(double kilometersPerHour) {
+        return; // something long
+    }
 }
