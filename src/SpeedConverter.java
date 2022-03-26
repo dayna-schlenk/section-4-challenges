@@ -15,4 +15,17 @@ public class SpeedConverter {
         // Return as type long
         return milesRounded;
     }
+
+    public void printConversion(double kilometersPerHour) {
+        // Testing for invalid value
+        if (kilometersPerHour < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            // Calculate milesPerHour from the kilometersPerHour parameter
+            long getMiles = toMilesPerHour(kilometersPerHour);
+
+            // Print message
+            System.out.println(kilometersPerHour + " km/h = " + getMiles + " mi/h");
+        }
+    }
 }
