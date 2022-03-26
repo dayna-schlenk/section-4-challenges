@@ -9,9 +9,9 @@ public class MegaBytesConverter {
             
             // Calculate remaining kilobytes
             int remainingKB = Math.round(kiloBytes % 1024);
-            System.out.println(remainingKB);
 
             // Print message in the proper format
+            System.out.println(kiloBytes + " KB = " + mB + " MB and " + remainingKB + " KB");
         }
     }
 }
