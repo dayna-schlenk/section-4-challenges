@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        SpeedConverter mySpeed = new SpeedConverter();
+        System.out.println(mySpeed.toMilesPerHour(10.0));
     }
 }
