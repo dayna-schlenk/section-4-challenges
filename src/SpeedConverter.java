@@ -5,8 +5,8 @@ public class SpeedConverter {
         if (kilometersPerHour < 0) {
             return -1; // indicates an invalid value
         } else {
-            // Multiply the number of kilometers by 0.62137
-            double miles = kilometersPerHour * 0.62137;
+            // Divide the number of kilometers by 1.609
+            double miles = kilometersPerHour / 1.609;
 
             // Round value
             long milesRounded = Math.round(miles);
