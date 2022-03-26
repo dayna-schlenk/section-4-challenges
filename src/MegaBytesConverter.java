@@ -6,9 +6,10 @@ public class MegaBytesConverter {
         } else {
             // Calculate megabytes
             int mB = Math.round(kiloBytes / 1024);
-            System.out.println(mB);
             
             // Calculate remaining kilobytes
+            int remainingKB = Math.round(kiloBytes % 1024);
+            System.out.println(remainingKB);
 
             // Print message in the proper format
         }
