@@ -1,3 +1,29 @@
 public class LeapYearCalculator {
-    // code
+    public boolean isLeapYear(int year) {
+        // Parameter needs to be in a certain range...
+        if (year >= 1 && year <= 9999) {
+            // Calculate if the year is a leap year - return true or false
+            if (year % 4 == 0) {
+                // Step 2
+                if (year % 100 == 0) {
+                    // Step 3
+                    if (year % 400 == 0) {
+                        // Step 4
+                        return true; // is a leap year (has 366 days)
+                    } else {
+                        // Step 5
+                        return false; // not a leap year (has 365 days)
+                    }
+                } else {
+                    // Step 4
+                    return true;
+                }
+            } else {
+                // Step 5
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
 }
