@@ -7,7 +7,7 @@ public class SumArrays {
         double solution = 0;
 
         for (double d : numbers) {
-            solution = solution + d;
+            solution += d;
         }
 
         return solution;
