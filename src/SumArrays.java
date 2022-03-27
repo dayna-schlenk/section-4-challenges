@@ -14,7 +14,6 @@ public class SumArrays {
 
         // return solution;
 
-        double solution = (numbers.length > 0) ? Arrays.stream(numbers).sum() : 0;
-        return solution;
+        return (numbers.length > 0) ? Arrays.stream(numbers).sum() : 0;
     }
 }
