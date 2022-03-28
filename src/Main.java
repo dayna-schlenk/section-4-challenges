@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // code
+        DecimalComparator myTry = new DecimalComparator();
+        System.out.println(myTry.areEqualByThreeDecimalPlaces(-3.123, 3.123));
     }
 }
